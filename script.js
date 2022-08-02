@@ -114,12 +114,14 @@ let categories = [
         course: '   BACKEND',
         count: 0,
         arr: []
+
     },
 ]
 
 
 for(let item of arr){
     for(let item2 of categories){
+        // item2.arr = []
         if(item.info.faculity.toLowerCase().trim() === item2.course.toLowerCase().trim()){
             item2.count++
             item2.arr.push(item)
